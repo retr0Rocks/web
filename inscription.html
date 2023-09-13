@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Badreddine Chamkhi">
+        <meta name="description" content="Page d'accueil">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+        <header>
+            <table>
+                <tr>
+                    <td><a href="accueil.html">Home</a></td>
+                    <td><a href="tournois.html">Tournois et Matches</a></td>
+                    <td><a href="joueurs.html">Liste joueurs</a></td>
+                    <td><a href="inscription.html">Inscription</a></td>
+                </tr>
+            </table>
+            <br>
+            <hr>
+            <img src="assets/images/img1.jpg" alt="en tete" height="500" width="1510">
+        </header>
+    </head>
+    <body>
+        <h1>Inscription au match</h1>
+        <form action="XX" method="POST">
+            <table>
+                <tr>
+                    <td><label for="name">Nom:</label></td>
+                    <td><input type="text" id="name" name="name" placeholder="John" required pattern="[a-zA-Z]{2,}" title="Veuillez entrer un nom valide (lettres uniquement)"></td>
+                </tr>
+                <tr>
+                    <td><label for="prenom">Prénom:</label></td>
+                    <td><input type="text" id="prenom" name="prenom" placeholder="Doe" required pattern="[a-zA-Z]{2,}" title="Veuillez entrer un prénom valide (lettres uniquement)"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="text" name="email" id="email" placeholder="contact@example.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" title="Le format de l'email doit être valide(contact@example.domain)"></td>
+                </tr>
+                <tr>
+                    <td><label for="telephone">Téléphone:</label></td>
+                    <td><input type="text" name="telephone" id="telephone" required pattern="[0-9]{10}" placeholder="**********" title="Veuillez entrer un numéro de téléphone valide (8 chiffres)"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date du match:</label></td>
+                    <td><input type="date" name="date" id="date" value="2023-jj-mm" min="2023-09-01" max="2023-12-30" required title="La date du match doit être comprise entre le 1er septembre 2023 et le 30 décembre 2023."></td>
+                </tr>
+                <tr>
+                    <td><label for="lien">Lieu du match:</label></td>
+                    <td>
+                        <select name="lien" id="lien">
+                            <option value="arriana">Arriana</option>
+                            <option value="tunis">Tunis</option>
+                            <option value="marsa">Marsa</option>
+                            <option value="bardo">Bardo</option>
+                            <option value="beb-khadhra">Beb El Khadhra</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit" name="inscrire" id="inscrire" value="S'inscrire au match">
+        </form>
+    </body>
+    <hr>
+    <footer>
+        <p>Vous pouvez nous contacter par email : <a href="mailto:contact@esprit.tn">contact@esprit.tn</a></p>
+        <p>Adresse : Ghazela, Tunis</p>
+    </footer>
+</html>
