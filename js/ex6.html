@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Badreddine Chamkhi">
+        <meta name="description" content="atelierJS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+    </head>
+    <body>
+        <script>
+            const modif_paragraphe = () => {
+                var paragraphe = document.getElementById("para");
+                paragraphe.innerHTML = paragraphe.innerHTML.replace("original", "<i>corrigé</i>");
+            }
+            const centrage_h1 = () => {
+                var h1_element = document.querySelector("h1");
+                h1_element.setAttribute("align", "center");
+                return;
+            }
+        </script>
+        <p id="para" onclick="modif_paragraphe()">c'est le mot original</p>
+        <h1 onclick="centrage_h1()">c'est un text de h1</h1>
+    </body>
+</html>
