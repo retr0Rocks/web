@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Badreddine Chamkhi">
+        <meta name="description" content="atelierJS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+    </head>
+    <body>
+        <script>
+            const entierAleatoire = (min, max) => {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+            var i = 3;
+            var randNumber = entierAleatoire(0, 10);
+            while (i) {
+                var input = prompt("Veuillez saisir un nombre entre 0-10 (3 tentatives)", "0-10");
+                if (input != randNumber) {
+                    i--;
+                    alert("Faux (" + i + " tentatives)");
+                } else {
+                    alert("Vrai!!");
+                    break;
+                }
+            }
+        </script>
+    </body>
+</html>

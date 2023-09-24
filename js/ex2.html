@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Badreddine Chamkhi">
+        <meta name="description" content="atelierJS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+    <body>
+        <script>
+            const siParfait = (n) => {
+                if (n > 0) {
+                    for (var i = 0; i < n; i++) {
+                        var somme_div = 0;
+                        for (var j = 1; j < i; j++){
+                            if (i % j === 0) {
+                                somme_div += j;
+                            }
+                        }
+                        if (i === somme_div){
+                            console.log(i + " est parfait");
+                        }                    
+                    }
+                } else {
+                    console.log("n est negatif");
+                }
+            }
+
+            //TEST CASES
+            siParfait(10);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Badreddine Chamkhi">
+        <meta name="description" content="atelierJS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil</title>
+    </head>
+    <body>
+        <script>
+            var T = [17, 38, 10, 25, 72];
+            console.log(T.sort());
+            T.push(12);
+            console.log(T);
+            T= T.reverse();
+            console.log(T);
+            console.log(T.indexOf(17));
+            T.splice(T.indexOf(38), 1);
+            console.log(T);
+            T_sliced = T.slice(3,4);
+            console.log(T_sliced);
+            T_sliced2 = T.slice(2);
+            console.log(T_sliced2);
+            T_sliced3 = T.slice(3, T.length - 1);
+            console.log(T_sliced3);
+        </script>
+    </body>
+</html>
