@@ -64,6 +64,5 @@ const checkEmail = () => {
     }
 }
 
-var sub = document.getElementById("inscrire");
-sub.addEventListener("click", submit);
+document.getElementById("inscrire").addEventListener("click", submit);
 document.getElementById("email").addEventListener("keyup", checkEmail);
